@@ -1,29 +1,40 @@
 body {
     width:100%;
+    height: 100%;
     background-color: #ffffff;
     margin: 0;
+    padding: 0;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 .container {
-	width: 100%;
+	width: 960px;
 	height: 100%;
-	background-color: #cccccc;
+	/*background-color: #cccccc;*/
+	background-image: url('../images/wov.png');
+	background-repeat: repeat;
+	background-size: 100%;
+	/*border: 1px solid black;*/
 }
 
 header {
 	border-bottom: 1px solid #cccccc;
 	height: 78px;
 	background-color: #ffffff;
+	margin: 0px;
 }
 header h1 {
 	background-color: #4aaaa5;
 	float: left;
-	padding: 10px;
+	height: 100%;
+	padding: 0 10px 0 10px;
 	margin-left: 20px;
 	color: #ffffff;
-	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-family: 'Georgia', 'Times New Roman', Times, serif;
+	font-size:36px;
 }
 a {
-	color: #666666;
+	color: #7777777;
+	text-decoration: none;
 }
 .profile {
 	width: 200px;
@@ -36,9 +47,8 @@ header li {
 	margin-left: 30px;
 	display: inline-block;	
 	float: right;
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	margin-top: 30px;
-	width: 65px;
+	width: 60px;
 	border-right: 1px solid #cccccc;
 }
 
@@ -49,40 +59,37 @@ section {
 	height: 600px;
 }
 
-content {
-	background-color: #ffffff;
-}
-
 h2 {
 	display: inline-block;	
 	color: #4aaaa5;
-	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-family: 'Georgia', 'Times New Roman', Times, serif;
+	font-size:36px;
 }
 
 p {
 	color: #777777;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	line-height: 27px;
+	line-height: 170%;
 }
 
-.about {
-	width: 60%;
+.about, .connect {
 	background-color: #ffffff;
 	margin:20px 20px;
-	float: left;
 	border: 1px solid #dddddd;
 	padding: 15px;
+}
+.about {
+	width: 548px;
+	float: left;
 }
 
 .connect {
-	width: 25%;
-	background-color: #ffffff;
-	margin:20px 20px;
-	float: left;
-	border: 1px solid #dddddd;
-	padding: 15px;
+	width: 198px;
+	float: right;
 }
-
+li img {
+	width: 50px;
+}
 li {
 	padding: 5px;
 	display: inline-block;	
@@ -93,6 +100,9 @@ footer {
 	background-color: #666666;
 	border-top: 7px solid #4aaaa5;
 	height: 60px;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
 }
 
 .foot {
