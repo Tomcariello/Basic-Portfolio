@@ -8,7 +8,7 @@ body {
 }
 .container {
 	width: 960px;
-	height: 800px; /*Why doesn't this work when height is set to 100%?*/
+	height: 1000px; /*Why doesn't this work when height is set to 100%?*/
 	background-image: url('../images/wov.png');
 	background-repeat: repeat;
 	background-size: 100%;
@@ -36,8 +36,6 @@ header > h1 {
     height: 38px;
     padding: 20px;
 }
-
-
 
 a {
 	color: #777777;
@@ -122,6 +120,7 @@ p {
 li img {
 	width: 50px;
 }
+
 li {
 	padding: 5px;
 	display: inline-block;	
@@ -143,4 +142,30 @@ footer {
 	font-size: 12px;
 	color: #ffffff;
 	text-align: center;
+}
+
+.pf1, .pf2, .pf3, .pf4, .pf5 {
+	float: left;
+	width: 270px;
+	color: #ffffff;
+}
+
+.text1 {
+	position: relative;
+	bottom: 50px;
+	background-color: #4aaaa5;
+	text-align: center;
+	height: 20px;
+	width: 250px;
+	margin: 0 35px;
+    padding: 10px 0;
+}
+
+img {
+	width: 250px;
+	margin: 0 35px;
+}
+
+.pf_container {
+	margin-top: 20px;
 }
