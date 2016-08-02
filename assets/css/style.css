@@ -7,7 +7,7 @@ body {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 .container {
-	width: 960px;
+	width: 100%;
 	height: 1000px; /*Why doesn't this work when height is set to 100%?*/
 	background-image: url('../images/wov.png');
 	background-repeat: repeat;
@@ -19,7 +19,10 @@ header {
 	height: 78px;
 	background-color: #ffffff;
 	margin: 0px;
+	width: 100%;
 }
+
+
 header h1 {
 	background-color: #4aaaa5;
 	float: left;
@@ -59,10 +62,14 @@ header li {
 	border-left: 1px solid #cccccc;
 	border-right: 1px solid #cccccc;
 }
+.main {
+	width: 960px;
+}
 section {
 	clear: both;
 	width: 900px
 	min-height: 600px;
+	margin: auto;
 }
 
 h2 {
@@ -160,6 +167,8 @@ footer {
 	width: 250px;
 	margin: 0 35px;
     padding: 10px 0;
+    text-decoration: bold;
+    font-size: 20px;
 }
 
 img {
@@ -169,4 +178,21 @@ img {
 
 .pf_container {
 	margin-top: 20px;
+}
+
+input {
+	margin-bottom: 20px;
+}
+
+form > p {
+	margin: 0;
+}
+
+input[type=text] {
+	width: 600px;
+}
+
+textarea {
+	width: 600px;
+	height: 200px;
 }
